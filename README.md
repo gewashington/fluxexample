@@ -1,2 +1,7 @@
-A simple page I made which practices the Flux Architecture.
+Creating user cards with Flux Architecture.s
+
+Uses:
+- ReactJS
+- Flux
+- CSS Flexbox 
 

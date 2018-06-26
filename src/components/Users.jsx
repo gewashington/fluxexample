@@ -1,7 +1,8 @@
 import React from 'react';
+import User from './User';
 import UsersStore from '../stores/UsersStore';
 import UsersActionCreators from '../actions/UsersActionCreators';
-
+import './Users.css';
 
 export default class Users extends React.Component {
     constructor() {
@@ -19,7 +20,9 @@ export default class Users extends React.Component {
     }
     renderUsers() {
         return this.state.users.map((user) => {
-            return<li>{user}</li>
+            return (
+                <User user={user} />
+            )
         })
     }
     render() {
@@ -27,12 +30,22 @@ export default class Users extends React.Component {
             return <div>Loading...</div>
         }
         return(
-            <div>
-                <ul>
+            <div className="cards-container">
                     {this.renderUsers()}
-                </ul>
             </div>
         )
     }
 }
 
+// const containerStyle = {
+//     height: '50%',
+//     paddingTop: '15%',
+//     margin: '0',
+//     display: '-webkit-box',
+//     display: '-moz-box',
+//     display: '-ms-flexbox',
+//     display: '-webkit-flex',
+//     display: 'flex',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+// }
