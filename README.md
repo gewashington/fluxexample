@@ -1,4 +1,4 @@
-Creating user cards with Flux Architectures
+Creating user cards with Flux Architecture
 
 Uses:
 - ReactJS
